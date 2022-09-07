@@ -40,7 +40,7 @@
 
 .navbar-container {
   font-family: sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   background: rgb(2, 76, 173);
   background: linear-gradient(90deg, rgba(2, 76, 173, 0.9699230033810399) 11%, rgba(1, 37, 89, 0.9335084375547094) 86%);
   padding: 0.5rem;
@@ -52,7 +52,7 @@
 }
 
 .App-logo-navBar{
-  height: 100px;
+  height: 120px;
   width: 100px;
 }
 
@@ -72,7 +72,7 @@
   flex: 1;
   text-decoration: none;
   color: rgb(222, 206, 206);
-  padding: 0.3rem;
+  padding: 0.5rem;
 }
 
 .navbar-container .lista .enlace {
