@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar';
-import Contenedor from './components/Contenedor/Contenedor';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
 function App() {
   
@@ -12,7 +12,7 @@ function App() {
       <header className="App-header">
 
         <img src={logo} className="App-logo" alt="logo" />
-       <Contenedor />
+       <ItemListContainer greeting={'La Solucion para tu asador'} />
        
 
       </header>
