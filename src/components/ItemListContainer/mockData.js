@@ -1,68 +1,97 @@
+import ImgProd1 from '../img/parrila.jpg';
+import ImgProd2 from '../img/discos.jpg';
+import ImgProd3 from '../img/fogonero.jpg';
+import ImgProd4 from '../img/tabla.jpg';
+import ImgProd5 from '../img/tabla-gravada.jpg';
+import ImgProd6 from '../img/set-asador.jpg';
+import ImgProd7 from '../img/plancheta.jpg';
+import ImgProd8 from '../img/iniciador.jpg';
+import ImgProd9 from '../img/combo.jpg';
+
 const data =
     [
         {
             id: '1',
             title: 'Parrillas Modulares',
+            detail: 'Parrilla Reforzada Modular de 80x50cm',
             price: 10500,
-            image: 'https://vulcanoparrillas.com.ar/wp-content/uploads/2020/03/05.png',
+            image: ImgProd1,
+            btn: 'Agregar al Carrito',
 
         },
         {
             id: '2',
             title: 'Discos',
+            detail: 'Discos con Base de Chapa plana Reforzada de 4.8mm',
             price: 15700,
-            image: 'https://www.lavacatuerta.com/images/productos/parrillas/asadores-cruz_discos/discos-arado/1_FOG017-disco-arado.jpg',
+            image: ImgProd2,
+            btn: 'Agregar al Carrito',
         },
         {
             id: '3',
             title: 'Fogoneros',
+            detail: 'Modelo con base 80x80x50cm y espesor de 3.2mm',
             price: 25700,
-            image: 'https://farriery.com.ar/wp-content/uploads/2019/09/Fogonero-1.jpg',
+            image: ImgProd3,
+            btn: 'Agregar al Carrito',
         },
         {
             id: '4',
             title: 'Tablas',
+            detail: 'Tabla de Algarrobo de excelente calidad',
             price: 1500,
-            image: 'https://assets.tramontina.com.br/upload/tramon/imagens/BEL/13167100PNM001G.png',
+            image: ImgProd4,
+            btn: 'Agregar al Carrito',
 
         },
 
         {
             id: '5',
             title: 'Tablas Gravadas',
+            detail: 'Gravacion a laser personalizado',
             price: 1800,
-            image: 'https://scontent.fcor2-2.fna.fbcdn.net/v/t1.6435-9/72211315_545842369554606_2633822337027276800_n.jpg?stp=dst-jpg_p600x600&_nc_cat=109&ccb=1-7&_nc_sid=a26aad&_nc_ohc=DkL-cMDiHl0AX_HnMq2&_nc_ht=scontent.fcor2-2.fna&oh=00_AT-s-maP2fmKJSOHiwvhNnhzXaFFe4eQXjkHbV5qqkEtgg&oe=63470991',
+            image: ImgProd5,
+            btn: 'Agregar al Carrito',
 
         },
         {
             id: '6',
-            title: 'Set Asador',
+            title: 'Kit Asador',
+            detail: 'Incluye Pala, Atizador y Pinza reforzado en chapa',
             price: 3500,
-            image: './img/set-asador.jpg',
+            image: ImgProd6,
+            btn: 'Agregar al Carrito',
 
         },
 
         {
             id: '7',
             title: 'Plancheta',
+            detail: 'Plancha de 45x26cm para Cocina a dos hornallas, Parrila o al Horno',
             price: 5000,
-            image: './img/plancheta.jpg',
+            image: ImgProd7,
+            btn: 'Agregar al Carrito',
 
         },
 
         {
             id: '8',
             title: 'Diablito + Iniciador de Fuego',
+            detail: 'Diablito free reforzado de 25x25x37cm de alto en chapa de 2.5mm + Iniciador de Fuego',
             price: 1000,
-            image: './img/iniciador.jpg',
+            image: ImgProd8,
+            btn: 'Agregar al Carrito',
+
 
         },
 
         {
             id: '9',
             title: 'Combo Titabé',
+            detail: 'Combo Asador con chapa para asar a Dos Fuegos',
             price: 17000,
-            image: './img/combo.jpg',
+            image: ImgProd9,
+            btn: 'Agregar al Carrito',
 
         }
 
