@@ -1,0 +1,6 @@
+.listaProductos {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    justify-items: center;
+    padding: 1rem;
+}

@@ -1,13 +1,13 @@
 import './Item.style.css';
-const Item = ({title, price, image}) => {
+const Item = ({ title, price, image, quantity }) => {
 
   return (
     <article className='contendorProductos text-focus-in '>
-    <div>
+
       <h2>{title}</h2>
-      <h3>${price}</h3>
-      <img src= {image} alt={title} width= {'200px'} />
-    </div>
+      <img className="img" src={image} alt={title} width={'300px'} />
+      <p className='p'>Cantidad: {quantity}</p>
+      <p>${price}</p>
     </article>
   );
 };

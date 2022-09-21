@@ -1,40 +1,36 @@
-
 import './ItemDetailContainer.style.css'
 import data from '../ItemListContainer/mockData';
 import { useEffect, useState } from "react";
+import { useParams } from 'react-router-dom';
 import ItemDetailList from '../ItemDetailList/ItemDetailList';
-import ItemCount from '../ItemCount/ItemCount';
+import Titulo from '../Titulo/Titulo';
 
 
 const Productos = (greeting) => {
-
     const [productList, setProductList] = useState([]);
-    
+    const { id } = useParams();
 
     useEffect(() => {
-      getProducts.then ((response)=>{
-        setProductList(response);
-      });
-         
+        getProducts.then((response) => {
+            setProductList(response);
+        });
     }, []);
 
     const getProducts = new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve ( data.filter((prod)=> prod.id === '1') );
+            resolve(data.filter((prod) => prod.id === id));
         }, 2000)
+
     });
-    
-    const onAdd = (quantity) => {
-        console.log('compraste ${quantity} unidades');
-      };
 
     return (
-        <div>
+        <section>
+            <Titulo texto={greeting} />
             <ItemDetailList lista={productList} />
-            <ItemCount initial={3} stock={5} onAdd={onAdd} />
-        </div>
+        </section>
+    );
+};
 
-    )
-}
+
 
 export default Productos;

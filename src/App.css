@@ -5,6 +5,7 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  padding: 1rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -43,12 +44,13 @@
   font-size: 1.2rem;
   background: rgb(2, 76, 173);
   background: linear-gradient(90deg, rgba(2, 76, 173, 0.9699230033810399) 11%, rgba(1, 37, 89, 0.9335084375547094) 86%);
-  padding: 0.5rem;
+  column-gap: 5rem;
   text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  text-decoration: none;
 }
 
 .App-logo-navBar{
@@ -78,4 +80,3 @@
 .navbar-container .lista .enlace {
   display: inline-block; 
 }
-

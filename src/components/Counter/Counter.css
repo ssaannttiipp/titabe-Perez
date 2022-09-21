@@ -1,0 +1,38 @@
+.contenedorCounter {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    align-content: center;
+}
+
+.counter{
+    background-color:rgb(152, 228, 186);
+    border-radius: 10px;
+    width: 200px;
+    height: 75px;
+}
+
+.stockDisponible {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.botonCounterSumar {
+    margin-left: 1rem;
+    background-color: rgb(129, 211, 243);
+    width: 40px;
+    height: 27px;
+    border: none;
+    font-size: 20px;
+    border-radius: 1rem;
+}
+
+.botonCounterRestar {
+    margin-right: 1rem;
+    background-color: rgb(129, 211, 243);
+    width: 40px;
+    height: 27px;
+    border: none;
+    font-size: 20px;
+    border-radius: 1rem;
+}

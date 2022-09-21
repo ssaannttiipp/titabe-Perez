@@ -1,43 +1,41 @@
 import data from "./mockData";
-import Titulo from "../Titulo/Titulo"
-import ItemCount from "../ItemCount/ItemCount";
 import { useEffect, useState } from "react";
 import ItemList from "../ItemList/ItemList";
+import { useParams } from "react-router-dom";
 
 
 
-const ItemListContainer = ({ greeting }) => {
-
+const Productos = (props) => {
+    const { category } = useParams();
     const [productList, setProductList] = useState([]);
-
     useEffect(() => {
-        getProducts.then((response) => {
-         setProductList (response);
-        })
-        .catch((error) => console.log (error));
-    }, []);
+        if (category) {
+            const response = data.filter((response) => response.category === category)
+            setProductList(response);
+        } else {
+            getProducts.then((response) => {
+                setProductList(response);
+            });
+        }
+    }, [category]);
 
     const getProducts = new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(data);
-        }, 2000);
+        }, 2000)
     });
 
 
-    const onAdd = (quantity) => {
-        console.log('compraste ${quantity} unidades');
-    };
-
 
     return (
-        <div>
-            <Titulo texto={greeting} />
-            <ItemList lista={productList} />
-            <ItemCount initial={3} stock={5} onAdd={onAdd} />
-
-        </div>
+        <section className='productos'>
+        <h2 className='productos-title tracking-in-contract '>{props.titulo}</h2>
+        <section>
+            <ItemList lista={productList}/>
+        </section>
+    </section> 
 
     );
 };
 
-export default ItemListContainer;
+export default Productos;
