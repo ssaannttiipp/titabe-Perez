@@ -8,6 +8,8 @@ import { useParams } from "react-router-dom";
 const Productos = (props) => {
     const { category } = useParams();
     const [productList, setProductList] = useState([]);
+
+
     useEffect(() => {
         if (category) {
             const response = data.filter((response) => response.category === category)

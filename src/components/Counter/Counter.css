@@ -6,20 +6,21 @@
 }
 
 .counter{
-    background-color:rgb(152, 228, 186);
+    background-color:rgb(16, 71, 211);
     border-radius: 10px;
     width: 200px;
-    height: 75px;
+    height: 85px;
 }
 
 .stockDisponible {
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0.5rem;
     font-size: 20px;
 }
 
 .botonCounterSumar {
     margin-left: 1rem;
-    background-color: rgb(129, 211, 243);
+    background-color: rgb(250, 251, 245);
     width: 40px;
     height: 27px;
     border: none;
@@ -29,7 +30,7 @@
 
 .botonCounterRestar {
     margin-right: 1rem;
-    background-color: rgb(129, 211, 243);
+    background-color: rgb(250, 251, 245);
     width: 40px;
     height: 27px;
     border: none;

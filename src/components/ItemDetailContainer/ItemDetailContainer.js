@@ -1,16 +1,17 @@
-import './ItemDetailContainer.style.css'
 import data from '../ItemListContainer/mockData';
 import { useEffect, useState } from "react";
-import { useParams } from 'react-router-dom';
 import ItemDetailList from '../ItemDetailList/ItemDetailList';
-import Titulo from '../Titulo/Titulo';
+import { useParams } from 'react-router-dom';
 
 
-const Productos = (greeting) => {
-    const [productList, setProductList] = useState([]);
+
+const Productos = () => {
     const { id } = useParams();
+    const [productList, setProductList] = useState([]);
+    
 
     useEffect(() => {
+
         getProducts.then((response) => {
             setProductList(response);
         });
@@ -25,7 +26,6 @@ const Productos = (greeting) => {
 
     return (
         <section>
-            <Titulo texto={greeting} />
             <ItemDetailList lista={productList} />
         </section>
     );
