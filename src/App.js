@@ -11,12 +11,13 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-      <NavBar />
+        <NavBar />
         <main className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          
+          <h3>¡La Solucion Para Tu Asador!</h3>
+
           <Routes>
-            <Route path='/' element={<h2>La Solucion para tu asador</h2>} />
+            <Route path='/' element={'inicio'} />
             <Route path='productos' element={<ItemListContainer titulo={'Nuestros Productos'} />} />
             <Route path='detail/:id' element={<ItemDetailContainer />} />
             <Route path='contacto' element={'contacto'} />

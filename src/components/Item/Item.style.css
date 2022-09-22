@@ -1,6 +1,16 @@
 .img {
         border-radius: 2rem;
-        width: 300px;
+        margin-bottom: 2rem;
+        height: 400px;
+}
+
+.span{
+        color: black;
+        background-color: rgba(255, 254, 254, 0.577);
+        border-radius: 2rem;
+        width: 200px;
+        
+        
 }
 
 .contendorProductos {
@@ -10,6 +20,7 @@
         display: grid;
         justify-items: center;
         align-items: stretch;
+        color: rgba(249, 241, 241, 0.922);
 
 }
 

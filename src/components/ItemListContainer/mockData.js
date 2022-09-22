@@ -12,7 +12,7 @@ const data =
     [
         {
             id: '1',
-            title: 'Parrillas Modulares',
+            title: 'Parrillas',
             detail: 'Parrilla Reforzada Modular de 80x50cm',
             category: 'Asador',
             price: 10500,
@@ -90,7 +90,7 @@ const data =
 
         {
             id: '8',
-            title: 'Diablito + Iniciador de Fuego',
+            title: 'Diablito',
             detail: 'Diablito free reforzado de 25x25x37cm de alto en chapa de 2.5mm + Iniciador de Fuego',
             category: 'Accesorios',
             price: 1000,
