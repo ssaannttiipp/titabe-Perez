@@ -15,7 +15,7 @@ const ItemDetailList = ({ lista }) => {
             image={product.image}
             detail={product.detail}
             quantity={product.quantity}
-            btnAgregarCarrito={product.btn}
+
           />
         ))
       }

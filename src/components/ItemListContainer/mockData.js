@@ -17,8 +17,8 @@ const data =
             category: 'Asador',
             price: 10500,
             image: ImgProd1,
-            quantity: '35',
-            btn: 'Agregar al Carrito',
+            stock: 35,
+
 
         },
         {
@@ -28,8 +28,8 @@ const data =
             category: 'Asador',
             price: 15700,
             image: ImgProd2,
-            quantity: '15',
-            btn: 'Agregar al Carrito',
+            stock: 15,
+
         },
         {
             id: '3',
@@ -38,8 +38,8 @@ const data =
             category: 'Asador',
             price: 25700,
             image: ImgProd3,
-            quantity: '10',
-            btn: 'Agregar al Carrito',
+            stock: 10,
+
         },
         {
             id: '4',
@@ -48,20 +48,20 @@ const data =
             category: 'Maderas',
             price: 1500,
             image: ImgProd4,
-            quantity: '50',
-            btn: 'Agregar al Carrito',
+            stock: 50,
+
 
         },
 
         {
             id: '5',
             title: 'Tablas Gravadas',
-            detail: 'Gravacion a laser personalizado',
+            detail: 'Grabacion a laser personalizado',
             category: 'Maderas',
             price: 1800,
             image: ImgProd5,
-            quantity: '35',
-            btn: 'Agregar al Carrito',
+            stock: 35,
+
 
         },
         {
@@ -71,8 +71,8 @@ const data =
             category: 'Accesorios',
             price: 3500,
             image: ImgProd6,
-            quantity: '28',
-            btn: 'Agregar al Carrito',
+            stock: 28,
+
 
         },
 
@@ -83,8 +83,8 @@ const data =
             category: 'Accesorios',
             price: 5000,
             image: ImgProd7,
-            quantity: '19',
-            btn: 'Agregar al Carrito',
+            stock: 19,
+
 
         },
 
@@ -95,8 +95,8 @@ const data =
             category: 'Accesorios',
             price: 1000,
             image: ImgProd8,
-            quantity: '12',
-            btn: 'Agregar al Carrito',
+            stock: 12,
+
 
 
         },
@@ -108,8 +108,8 @@ const data =
             category: 'Asador',
             price: 17000,
             image: ImgProd9,
-            quantity: '4',
-            btn: 'Agregar al Carrito',
+            stock: 4,
+
 
         }
 

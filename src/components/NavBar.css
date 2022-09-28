@@ -1,0 +1,95 @@
+.navbar-container {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    background: rgb(2, 76, 173);
+    background: linear-gradient(90deg, rgba(2, 76, 173, 0.9699230033810399) 11%, rgba(1, 37, 89, 0.9335084375547094) 86%);
+    column-gap: 5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  
+  .App-logo-navBar {
+    height: 120px;
+    width: 100px;
+  }
+
+  .App-logo-navBar:hover {
+    transform: scale(1.2);
+    transition: 1.3s;
+}
+  
+  .lista {
+  
+    list-style: none;
+    padding: 0rem;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+  
+  }
+  
+  .enlace {
+  
+    margin-left: 16px;
+    flex: 1;
+    text-decoration: none;
+    color: rgb(222, 206, 206);
+    padding: 0.5rem;
+  }
+  
+.enlace:hover {
+    transform: scale(1.1);
+}
+
+  
+  .navbar-container .lista .enlace {
+    display: inline-block;
+  }
+
+
+.cabeceraBoton{
+    display: none;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+.cabeceraSvg {
+    width: 2em;
+    height: 2em;
+}
+@media screen and (max-width: 480px) {
+    .cabeceraBoton {
+        display: flex;
+        cursor: pointer;
+    }
+    .cabeceraNav {
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 0vh;
+        opacity: 0;
+        overflow: hidden;
+        transition: all .5s ease;
+    }
+    .cabeceraNav.isActive{
+        height: 50vh;
+        opacity: 1;
+    }
+    .Lista{
+        flex-direction: column;
+    }
+    .enlace{
+        margin: .7em 0;
+    }
+}
+.navlink{
+    align-self: center;
+}

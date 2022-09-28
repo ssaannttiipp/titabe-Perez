@@ -24,6 +24,25 @@
 
 }
 
+.botonAgregar {
+        border: 1px solid #FFC800;
+        /*anchura, estilo y color borde*/
+        padding: 5px;
+        /*espacio alrededor texto*/
+        background-color: #FFC800;
+        /*color botón*/
+        color: #ffffff;
+        /*color texto*/
+        text-decoration: none;
+        /*decoración texto*/
+        text-transform: uppercase;
+        /*capitalización texto*/
+        border-radius: 50px;
+        text-align: center;
+        margin: 10px 0px 20px 0px;
+    
+    }
+
 .text-focus-in {
         -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2s both;
         animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2s both;

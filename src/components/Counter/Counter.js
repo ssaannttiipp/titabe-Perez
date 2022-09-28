@@ -1,31 +1,39 @@
-import React, {useState} from "react";
-import Swal from 'sweetalert2'
-import withReactContent from 'sweetalert2-react-content'
+
 import './Counter.css'
 
-const Counter = (props) => {
-    const MySwal = withReactContent(Swal)
-    const [stock, setStock] = useState(0);
-    const sumar = () => stock <  props.stockProductos ? setStock(stock + 1) : MySwal.fire({
-      icon: 'warning',
-      title: 'Se alcanzó el stock disponible',
-      text: 'Presioná OK para continuar comprando',
-    });
-    const restar = () => stock > 0 ? setStock(stock - 1) : Swal.fire({
-      icon: 'error',
-      title: 'No se pueden ingresar valores negativos',
-      text: "Presioná OK para continuar comprando"});
-  return (
+const Counter = ({ setItem, items, stock, price }) => {
+  const sumar = () => {
+    if(items < stock) {
+        setItem(items + 1)
+    }
+}
+const restar = () => {
+    if(items > 0){
+        setItem(items - 1)
+    }
+    return;
+}
+
+return (
     <>
-    <div className="contenedorCounter">
-        <div className="counter">
-            <div className="stockDisponible">{stock}</div>
-            <button className="botonCounterRestar" onClick={restar}>-</button>
-            <button className="botonCounterSumar" onClick={sumar}>+</button>
+        <div className="acomodadoContador">            
+            <div>
+            <button className="contador" onClick={restar}>-</button>
+                <span className="spanDetalle">{items}</span>
+                <button className="contador" onClick={sumar}>+</button>               
+            </div>
+            <div className="precio">
+                <span className="spanTotal">
+                    <b>Total: ${items * price}</b>                
+                </span>        
+            </div>
         </div>
-    </div>
     </>
-  );
+)
+
+
 }
 
 export default Counter;
+
+

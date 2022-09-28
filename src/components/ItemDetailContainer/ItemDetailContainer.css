@@ -1,0 +1,26 @@
+.contenedorDetalle {  
+    margin-top: 50px;
+    margin-bottom: 50px;    
+    padding: 30px;
+}
+
+.boton {
+    width: 150px;
+    height: 40px;
+    margin: 40px;
+    border: 1px solid rgb(0, 137, 191);
+    /*anchura, estilo y color borde*/
+    padding: 5px;
+    /*espacio alrededor texto*/
+    background-color:rgb(0, 137, 191);
+    /*color botón*/
+    color: #ffffff;
+    /*color texto*/
+    text-decoration: none;
+    /*decoración texto*/
+    text-transform: uppercase;
+    /*capitalización texto*/
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 10px;
+}

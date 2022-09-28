@@ -1,0 +1,81 @@
+.fondo-cart{
+    background-color: rgba(244, 244, 244, 0.69);
+    border-radius: 30px;
+    width: 1000px;
+}
+
+.detatalleCarrito {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(28, 28, 28);
+    border-radius: 30px;
+    background-color: rgba(244, 244, 244, 0.69);
+    color: #ad8801;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.title-cart{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    font-size: 100px;
+    color: #ad8801;
+}
+.nombre,h3 {
+    color: black;
+    
+}
+.carritoflex {
+    display: flex;    
+    width: 400px;
+    margin: 30px;
+}
+.imgCarrito {
+    margin-top: 20px;
+}
+.linkVolver {
+    display: flex;
+    justify-content: center;
+    color: #ad8801;
+}
+.carritoContenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.botonVaciar {
+    width: 150px;
+    height: 30px;
+    margin: 20px;
+    border: 1px solid rgb(0, 137, 191);
+    /*anchura, estilo y color borde*/
+    padding: 5px;
+    /*espacio alrededor texto*/
+    background-color: rgb(0, 137, 191);
+    /*color botón*/
+    color: black;
+    /*color texto*/
+    text-decoration: none;
+    /*decoración texto*/
+    text-transform: uppercase;
+    /*capitalización texto*/
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 10px;
+}
+.marco {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 480px){
+    .carritoContenedor{
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

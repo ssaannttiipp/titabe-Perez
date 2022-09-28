@@ -1,32 +1,40 @@
 import data from '../ItemListContainer/mockData';
 import { useEffect, useState } from "react";
-import ItemDetailList from '../ItemDetailList/ItemDetailList';
+import ItemDetail from "../ItemDetail/ItemDetail";
 import { useParams } from 'react-router-dom';
-
-
+/* import { getFirestore, doc, getDoc } from "firebase/firestore"; */
+import './ItemDetailContainer.css'
 
 const Productos = () => {
     const { id } = useParams();
-    const [productList, setProductList] = useState([]);
+    const [productDetail, setProductDetail] = useState([]);
     
 
-    useEffect(() => {
+    useEffect (() => {
+      /*   getItem(); */
+        
+      getItem.then((response) => {
+            const dataFiltrada = response.filter((product) => product.id === id);
+            setProductDetail(...dataFiltrada);
+        })
+    },)
 
-        getProducts.then((response) => {
-            setProductList(response);
-        });
-    }, []);
-
-    const getProducts = new Promise((resolve, reject) => {
+    /* const getItem = () => {
+        const db = getFirestore();
+        const queryDoc = doc(db, "Items", id);
+        getDoc(queryDoc).then((res) =>{
+            setProductDetail({id: res.id, ...res.data()});
+        }).catch((err) => console.log(err));
+    } */
+    const getItem = new Promise((resolve) => {
         setTimeout(() => {
-            resolve(data.filter((prod) => prod.id === id));
-        }, 2000)
-
+            resolve(data);
+        }, 2000);
     });
 
     return (
-        <section>
-            <ItemDetailList lista={productList} />
+        <section className="contenedorDetalle">
+             <ItemDetail lista = {productDetail} />
         </section>
     );
 };

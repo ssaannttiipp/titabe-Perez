@@ -1,40 +1,42 @@
-.contenedorCounter {
+
+.spanDetalle {
+    color: black;
+    font-size: 1rem; 
+    margin-bottom: 5px;
+}
+
+.acomodadoContador {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    border-radius: 10px;
-    align-content: center;
+    text-align: center;
+    align-items: center;
 }
 
-.counter{
-    background-color:rgb(16, 71, 211);
-    border-radius: 10px;
-    width: 200px;
-    height: 85px;
+.contador {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    border: 1px solid rgb(0, 137, 191);
+    /*anchura, estilo y color borde*/
+    padding: 5px;
+    /*espacio alrededor texto*/
+    background-color: rgb(0, 137, 191);
+    /*color botón*/
+    color: #ffffff;
+    /*color texto*/
+    text-decoration: none;
+    /*decoración texto*/
+    text-transform: uppercase;
+    /*capitalización texto*/
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 10px;
 }
 
-.stockDisponible {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 0.5rem;
-    font-size: 20px;
-    color: white;
+.spanTotal {
+    color:rgb(0, 137, 191);
 }
-
-.botonCounterSumar {
-    margin-left: 1rem;
-    background-color: rgb(250, 251, 245);
-    width: 40px;
-    height: 27px;
-    border: none;
-    font-size: 20px;
-    border-radius: 1rem;
-}
-
-.botonCounterRestar {
-    margin-right: 1rem;
-    background-color: rgb(250, 251, 245);
-    width: 40px;
-    height: 27px;
-    border: none;
-    font-size: 20px;
-    border-radius: 1rem;
+.precio {
+    margin: 30px;
 }
